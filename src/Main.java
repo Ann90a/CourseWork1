@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Main {
 
     private static final Employee[] EMPLOYEES = new Employee[10];
@@ -21,6 +23,7 @@ public class Main {
         double averageSalary = findAverageSalary();
         System.out.println("Средняя зп: " + averageSalary);
         printFullNaveInfo();
+
     }
 
     public static void printFullInfo() {
@@ -98,4 +101,61 @@ public class Main {
         }
     }
 
+    //операторы if/else, switch/case
+    public class number {
+        public static void main(String[] args) {
+            int a = 6;
+            int b = 4;
+            if (a > b) {
+                System.out.println("Первое число больше второго");
+            } else {
+                System.out.println("Первое число меньше второго");
+            }
+
+            int num = 8;
+            switch (num) {
+
+                case 1:
+                    System.out.println("число равно 1");
+                    break;
+                case 8:
+                    System.out.println("число равно 8");
+                    num++;
+                    break;
+                case 9:
+                    System.out.println("число равно 9");
+                    break;
+                default:
+                    System.out.println("число не равно 1, 8, 9");
+            }
+
+
+        }
+
+            //Создала массив, и прописала геттеры и сеттеры
+        public class Address {
+            int index;
+            String country;
+            int[] arr = new int[2];
+            //Здесь несколько полей геттеров и сеттеров
+            public void setIndex(int index) {
+                this.index = index;
+            }
+
+            public int getIndex() {
+                return index;
+            }
+
+
+            public void setCountry(String country) {
+                this.country = country;
+            }
+
+            public String getCountry() {
+                return country;
+            }
+
+
+        }
+    }
 }
